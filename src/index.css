@@ -28,6 +28,7 @@ body {
 }
 
 #categories ul li a {
+  text-align: center;
   display: block;
   text-decoration: none;
   height: auto;
@@ -157,7 +158,7 @@ body {
   margin: auto;
   height: 180px;
   width: 46px;
-  background: url(./images/beer.png) no-repeat;
+
 }
 
 .product-discript {

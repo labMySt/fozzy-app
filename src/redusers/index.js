@@ -7,17 +7,18 @@ import {
 const initialState = {
   filters: null,
   products:[
-    {name: "Пиво Жигули світле", discription: "фільтроване 6% 033л", categories: ['beer', 'classic']},
-    {name: "Пиво Backs", discription: "нефільтроване 5% 0.6л", categories: ['beer', 'light']},
-    {name: "Пиво Duck світле", discription: "фільтроване 6% 0.5л", categories: ['beer', 'classic', 'light']},
-    {name: "Пиво Гребуча Корова Світле", discription: "нефільтроване 5% 0.6л", categories: ['beer', 'classic']},
-    {name: "Пиво Жигули світле", discription: "фільтроване 6% 033л", categories: ['beer', 'classic']},
-    {name: "Пиво Backs", discription: "нефільтроване 5% 0.6л", categories: ['beer', 'light']},
-    {name: "Пиво Duck світле", discription: "фільтроване 6% 0.5л", categories: ['beer', 'classic', 'light']},
-    {name: "Пиво Гребуча Корова Світле", discription: "нефільтроване 5% 0.6л", categories: ['beer', 'classic']},  {name: "Пиво Жигули світле", discription: "фільтроване 6% 033л", categories: ['beer', 'classic']},
-    {name: "Пиво Backs", discription: "нефільтроване 5% 0.6л", categories: ['beer', 'light']},
-    {name: "Пиво Duck світле", discription: "фільтроване 6% 0.5л", categories: ['beer', 'classic', 'light']},
-    {name: "Пиво Гребуча Корова Світле", discription: "нефільтроване 5% 0.6л", categories: ['beer', 'classic']}
+    {name: "Пиво Жигули світле", discription: "фільтроване 6% 033л", image:"../images/beer.png", categories: ['beer', 'classic']},
+    {name: "Пиво Backs", discription: "нефільтроване 5% 0.6л", image:"../images/beer.png", categories: ['beer', 'light']},
+    {name: "Пиво Duck світле", discription: "фільтроване 6% 0.5л", image:"../images/beer.png", categories: ['beer', 'classic', 'light']},
+    {name: "Пиво Гребуча Корова Світле", discription: "нефільтроване 5% 0.6л", image:"../images/beer.png", categories: ['beer', 'classic']},
+    {name: "Пиво Жигули світле", discription: "фільтроване 6% 033л", image:"../images/beer.png", categories: ['beer', 'classic']},
+    {name: "Пиво Backs", discription: "нефільтроване 5% 0.6л", image:"../images/beer.png", categories: ['beer', 'light']},
+    {name: "Пиво Duck світле", discription: "фільтроване 6% 0.5л", image:"../images/beer.png", categories: ['beer', 'classic', 'light']},
+    {name: "Пиво Гребуча Корова Світле", discription: "нефільтроване 5% 0.6л", image:"../images/beer.png", categories: ['beer', 'classic']},
+    {name: "Пиво Жигули світле", discription: "фільтроване 6% 033л", image:"../images/beer.png", categories: ['beer', 'classic']},
+    {name: "Пиво Backs", discription: "нефільтроване 5% 0.6л", image:"../images/beer.png", categories: ['beer', 'light']},
+    {name: "Пиво Duck світле", discription: "фільтроване 6% 0.5л", image:"../images/beer.png", categories: ['beer', 'classic', 'light']},
+    {name: "Пиво Гребуча Корова Світле", discription: "нефільтроване 5% 0.6л", image:"../images/beer.png", categories: ['beer', 'classic']}
   ]
 };
 
