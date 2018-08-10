@@ -1,71 +1,192 @@
 body {
   margin: 0;
   padding: 0;
+  overflow:  hidden;
 }
 
-#categories{
+
+#categories {
   overflow: auto;
   display: inline-block;
-	width: 10%;
+  width: 10%;
   height: 100vh;
-	transition: .3s;
+  transition: .3s;
   background-color: #FDFEFE;
 }
 
-#categories ul{
-	display: block;
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	position: relative;
+#categories ul {
+  display: block;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
 }
 
-#categories ul li{
-	display: block;
-	position: relative;
+#categories ul li {
+  display: block;
+  position: relative;
 }
 
-#categories ul li a{
-	display: block;
+#categories ul li a {
+  display: block;
   text-decoration: none;
-	height: auto;
-	font-size: 16px;
-	color: #E09C2D;
-	background-color: #FDFEFE;
+  height: auto;
+  font-size: 16px;
+  color: #E09C2D;
+  background-color: #FDFEFE;
 }
 
-#categories ul li a:focus,
-#categories ul li:focus a{
-	background: #22095F;
-	color: #fff;
+#categories ul li a:focus, #categories ul li:focus a {
+  background: #22095F;
+  color: #fff;
 }
+
 .category-text {
-   text-align: center;
-   height: 200px;
+  background: url(./images/products.png) no-repeat;
+  text-align: center;
+  background-size: cover;
+  height: 90px;
+  width: 100px;
 }
-::-webkit-scrollbar { width: 5px; height: 5px;}
-::-webkit-scrollbar-track {  background-color: #999;}
-::-webkit-scrollbar-track-piece { background-color: #ffffff;}
-::-webkit-scrollbar-thumb { height:40px; background-color: #D7D4DA; border-radius: 2px;}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #999;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #ffffff;
+
+}
+
+::-webkit-scrollbar-thumb {
+  height: 100px;
+  background-color: #D7D4DA;
+  border-radius: 15px;
+}
+
 /*---------------------------------- GROUPS */
-.routes {
+#groups {
+  display: inline-block;
+  width: 90%;
+  height: 100vh;
+  transition: .3s;
+  background-color: #260054;
+}
+ .groups-list {
   overflow: auto;
   display: inline-block;
-	width: 18%;
+  width: 15%;
   height: 100vh;
-	transition: .3s;
+  transition: .3s;
   color: white;
-  background-color: #221363;
+  background-color: #241166;
 }
+
+.groups-list ul{
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.groups-list ul li{
+  position:relative;
+  color: white;
+}
+.panel-body{
+  display: none;
+}
+.groups-list ul li a{
+  padding: 15px;
+  height: 50px;
+  position:relative;
+  color: white;
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+.groups-list ul li a:hover{
+  font-weight:bold;
+  text-shadow: 1px 1px 2px black, 0 0 1em white;
+}
+
+.groups-list ul li ul li a{
+  padding-left: 30px;
+  height: 50px;
+  position:relative;
+  border-width: 1px;
+  border-color: white;
+  border-style: solid;
+  color: white;
+  display: block;
+  position: relative;
+}
+
+
+
 
 #fild {
+  padding: 20px;
   overflow: auto;
   display: inline-block;
   height: 100vh;
-  width: 70%;
+  width: 75%;
   background-color: red;
   transition: .3s;
   color: white;
   background-color: #260054;
+}
+/*-------------------------------------PRODUCT  */
+.product {
+  width: 200px;
+}
+
+.product-image {
+  margin: auto;
+  height: 180px;
+  width: 46px;
+  background: url(./images/beer.png) no-repeat;
+}
+
+.product-discript {
+  text-align: center;
+}
+
+button {
+  font-size: 14px;
+  border-width: 1px;
+  border-color: white;
+  border-style: solid;
+  padding: 5px 25px 5px 25px;
+  color: white;
+  border-radius: 15px;
+  background-color: transparent;
+  display: block;
+  margin: auto;
+  transition: .3s;
+}
+
+button:hover{
+  border-color: #E09C2D;
+  color: #E09C2D;
+  background-color: #FDFEFE;
+}
+/*---------------------------------------Fild name  */
+.fild-name {
+  margin: auto;
+  text-align: center;
+}
+.fild-name-main {
+  font-size: 20px;
+  text-align: center;
+}
+
+.fild-name-discript {
+  font-size: 15px;
 }
