@@ -10,6 +10,13 @@ const initialState = {
     {name: "Пиво Жигули світле", discription: "фільтроване 6% 033л", categories: ['beer', 'classic']},
     {name: "Пиво Backs", discription: "нефільтроване 5% 0.6л", categories: ['beer', 'light']},
     {name: "Пиво Duck світле", discription: "фільтроване 6% 0.5л", categories: ['beer', 'classic', 'light']},
+    {name: "Пиво Гребуча Корова Світле", discription: "нефільтроване 5% 0.6л", categories: ['beer', 'classic']},
+    {name: "Пиво Жигули світле", discription: "фільтроване 6% 033л", categories: ['beer', 'classic']},
+    {name: "Пиво Backs", discription: "нефільтроване 5% 0.6л", categories: ['beer', 'light']},
+    {name: "Пиво Duck світле", discription: "фільтроване 6% 0.5л", categories: ['beer', 'classic', 'light']},
+    {name: "Пиво Гребуча Корова Світле", discription: "нефільтроване 5% 0.6л", categories: ['beer', 'classic']},  {name: "Пиво Жигули світле", discription: "фільтроване 6% 033л", categories: ['beer', 'classic']},
+    {name: "Пиво Backs", discription: "нефільтроване 5% 0.6л", categories: ['beer', 'light']},
+    {name: "Пиво Duck світле", discription: "фільтроване 6% 0.5л", categories: ['beer', 'classic', 'light']},
     {name: "Пиво Гребуча Корова Світле", discription: "нефільтроване 5% 0.6л", categories: ['beer', 'classic']}
   ]
 };

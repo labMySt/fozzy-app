@@ -11,7 +11,6 @@ class ProductsList extends Component {
         <Product prod = {prod}/>
       )
     })
-
     return (
       <div>
        {listItems}

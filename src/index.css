@@ -4,7 +4,6 @@ body {
   overflow:  hidden;
 }
 
-
 #categories {
   overflow: auto;
   display: inline-block;
@@ -128,23 +127,30 @@ body {
   position: relative;
 }
 
-
-
-
 #fild {
   padding: 20px;
   overflow: auto;
   display: inline-block;
   height: 100vh;
-  width: 75%;
+  width: 85%;
   background-color: red;
   transition: .3s;
   color: white;
   background-color: #260054;
 }
+
+#product-list {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+
 /*-------------------------------------PRODUCT  */
 .product {
-  width: 200px;
+  width: 220px;
+  display: inline-block;
 }
 
 .product-image {

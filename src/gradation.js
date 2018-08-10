@@ -1,95 +1,58 @@
 export default {
  confectionary: [
    {
-     name: "Торти",
-     path: "pies",
-     subgroups: [
-       { name: "Медовики", path: "honey"},
-       { name: "Наполеони", path: "Napoleon" }
-     ]
+     name: "pies",
+     subgroups: ["honey", "napoleon" ]
   },
   {
-    name: "Цукерки",
-    path: "sweets",
-    subgroups: [
-      { name: "Льодяники", path: "lollipops"},
-      { name: "Вафельні", path: "lollipops" }
-    ]
+    name: "sweets",
+    subgroups: ["lollipops", "lollipops" ]
  },
  {
-   name: "Тістечка",
-   path: "cakes",
-   subgroups: [
-     { name: "Кекси", path: "cakes"},
-     { name: "Заварні", path: "brewed" }
-   ]
+   name: "cakes",
+   subgroups: ["cakes","brewed" ]
 },
 {
-  name: "Печиво",
-  path: "cookies",
+  name: "cookies",
   subgroups: null
 }
 ],
 for_kids: [
   {
-    name: "Торти",
-    path: "pies",
-    subgroups: [
-      { name: "Медовики", path: "honey"},
-      { name: "Наполеони", path: "Napoleon" }
-    ]
+    name: "pies",
+    subgroups: ["honey"]
  },
  {
-   name: "Цукерки",
-   path: "sweets",
-   subgroups: [
-     { name: "Льодяники", path: "lollipops"},
-     { name: "Вафельні", path: "lollipops" }
-   ]
+   name: "sweets",
+   subgroups: ["lollipops", "lollipops" ]
 },
 {
-  name: "Тістечка",
-  path: "cakes",
-  subgroups: [
-    { name: "Кекси", path: "cakes"},
-    { name: "Заварні", path: "brewed" }
-  ]
+  name: "cakes",
+  subgroups: ["cakes", "brewed"]
 },
 {
- name: "Печиво",
- path: "cookies",
+ name: "cookies",
  subgroups: null
 }
 ],
 alcogol:[
   {
-    name: "Пиво",
-    path: "beer",
-    subgroups: [
-      { name: "Класичне", path: "classic"},
-      { name: "Світле", path: "light" }
-    ]
+    name: "beer",
+    subgroups: ["classic", "light" ]
  },
  {
-   name: "Віскі",
-   path: "whiskey",
-   subgroups: [
-     { name: "Бурбон", path: "bourbon"},
-     { name: "Скотч", path: "scotch" }
-   ]
+   name: "whiskey",
+   subgroups: [ "bourbon", "scotch" ]
 },
 {
-  name: "Горілка",
-  path: "vodka",
+  name: "vodka",
   subgroups: null
 },
 {
- name: "Бренді",
- path: "brandy",
+ name: "brandy",
  subgroups: null
 }
 ],
-for_kids:[],
 sunflower_oil:[],
 ice_cream:[],
 coffee:[]
