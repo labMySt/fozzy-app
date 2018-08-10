@@ -8,7 +8,6 @@ export default {
  cakes: "Тістечка",
  brewed: "Заварні",
  cookies: "Печиво",
- pies:"Торти",
  beer:"Пиво",
  classic: "Класичне",
  light: "Світле",

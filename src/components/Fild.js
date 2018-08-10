@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
-import { Switch, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
-import Groups from './Groups';
-import Product from './Product';
 import FildName from './FildName';
 import ProductsList from './ProductsList';
 import * as actions from '../actions';

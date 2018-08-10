@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import ing from "../images/beer.png"
 
 class Product extends Component {
   render() {
@@ -11,7 +9,7 @@ class Product extends Component {
 
       <div className="product">
       <div className="product-image">
-        <img src={image}></img>
+        <img src={image} alt = {this.props.prod.name}></img>
       </div>
 
       <div className="product-discript">
@@ -24,10 +22,5 @@ class Product extends Component {
   }
 }
 
-const mapStateToProductProps = (state) => {
 
-  const {filters, products} = state;
-  return {}
-};
-
-export default connect(mapStateToProductProps)(Product);
+export default Product;
