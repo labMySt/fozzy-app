@@ -16,5 +16,9 @@ export default {
  bourbon: "Бурбон",
  scotch: "Скотч",
  vodka: "Горілка",
- brandy: "Бренді"
+ brandy: "Бренді",
+ refined: "Рафінована",
+ escimo: "Ескімо",
+ instant: "Розчинна"
+
 }

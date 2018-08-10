@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link, Route} from 'react-router-dom';
+import {Redirect, Link, Route} from 'react-router-dom';
 import gradation from '../gradation';
 import translations from '../translations';
 import Fild from './Fild';
@@ -9,6 +9,8 @@ class Groups extends Component {
   render() {
 
     const id = this.props.match.params.id;
+    const url = this.props.match.url;
+    const urlTo = `${this.props.match.url}/${gradation[id][0].name}`;
     const listItems = gradation[id].map((group) => {
       if(!group.subgroups)
       return (
@@ -43,6 +45,7 @@ class Groups extends Component {
         <ul>{listItems}</ul>
       </div>
        <Route path={`${this.props.match.path}/:group/:subgroup?`} component={Fild}/>
+       <Redirect from={url} exact to={urlTo} />
     </div>
    );
   }

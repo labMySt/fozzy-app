@@ -51,9 +51,17 @@ alcogol:[
 {
  name: "brandy",
  subgroups: null
-}
-],
-sunflower_oil:[],
-ice_cream:[],
-coffee:[]
+}],
+sunflower_oil:[{
+  name: "refined",
+  subgroups: null
+}],
+ice_cream:[{
+  name: "escimo",
+  subgroups: null
+}],
+coffee:[{
+  name: "instant",
+  subgroups: null
+}]
 }
