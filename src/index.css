@@ -197,3 +197,14 @@ button:hover{
 .fild-name-discript {
   font-size: 15px;
 }
+
+#fatching {
+  width: 60px;
+  height: 60px;
+}
+#fatching img{
+  display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}

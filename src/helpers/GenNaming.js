@@ -1,10 +1,11 @@
-import translations from '../translations';
 
 
 export default function (group, subgroup) {
-  if(subgroup)
-  var naming = `${translations[group]} ${translations[subgroup]}`;
-  else
-   var naming = `${translations[group]}`;
+  let naming;
+  if(subgroup){
+  naming  = `${group} ${subgroup}`;
+  } else {
+     naming = `${group}`;
+    }
   return naming.toUpperCase();
 }
