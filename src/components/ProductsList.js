@@ -10,6 +10,7 @@ class ProductsList extends Component {
   render() {
     let listItems = null;
     const products = this.props.products;
+    console.log("producnts",products)
     if(products) {
       listItems = this.props.products.map((prod) => {
         return (

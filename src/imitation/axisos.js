@@ -6,11 +6,11 @@ export default {
     return new Promise((res, rej) => {
       setTimeout(() => {
          switch (path) {
-           case 'categories'   : res(categoruis);             break;
-           case 'confectionary': res(products.confectionary); break;
-           case 'oil'          : res(products.oil);           break;
-           case 'ice'          : res(products.ice);           break;
-           case 'alcogol'      : res(products.alcogol);       break;
+           case 'categories'   : res(categoruis);                              break;
+           case 'confectionary': res({confectionary: products.confectionary}); break;
+           case 'oil'          : res({oil : products.oil});                    break;
+           case 'ice'          : res({ice: products.ice});                     break;
+           case 'alcogol'      : res({alcogol:products.alcogol});              break;
 
            default : rej("Uuops!");
          }

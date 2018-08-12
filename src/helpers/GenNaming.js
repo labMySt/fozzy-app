@@ -1,11 +1,29 @@
 
 
-export default function (group, subgroup) {
+export default function (filters, categories) {
   let naming;
-  if(subgroup){
-  naming  = `${group} ${subgroup}`;
-  } else {
-     naming = `${group}`;
+
+  const Items = new RegExp(`/(\\w+)/(\\w+)(?:/(\\w+))?`)
+  .exec(filters);
+
+  let categoryProd = categories[Items[1]].groups;
+  let subgroup = null;
+  for(let item of categoryProd) {
+   if(item.path == Items[2]){
+      naming = item.name;
+      subgroup = item.subgroups;
+      break;
     }
+  }
+  console.log(subgroup)
+  if(typeof Items[3] != "undefined") {
+    for(let item of subgroup) {
+     if(item.path == Items[3]){
+        naming =  naming + " " + item.name;
+        break;
+      }
+    }
+  }
+
   return naming.toUpperCase();
 }

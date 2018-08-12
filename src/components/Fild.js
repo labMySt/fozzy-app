@@ -6,18 +6,20 @@ import * as actions from '../actions';
 import GenNaming from '../helpers/GenNaming';
 
 class Fild extends Component {
+  componentWillMount() {
+    const id = this.props.match.params.id;
+    this.props.dispatch(actions.getProducts(id));
+  }
 
   render() {
 
-    const {group, subgroup} =  this.props.match.params;
-    const naming = GenNaming(group, subgroup);
-    if(subgroup){
-      this.props.dispatch(actions.setVisidilityFilter(subgroup));
-      console.log("sub", group);
-    } else {
-      this.props.dispatch(actions.setVisidilityFilter(group));
-      console.log(group);
+    const url =  this.props.match.url;
+    let naming = "";
+    if(this.props.categories) {
+      naming = GenNaming(url, this.props.categories);
     }
+    this.props.dispatch(actions.setVisidilityFilter(url));
+
 
     return (
     <div id = "fild">
@@ -28,4 +30,9 @@ class Fild extends Component {
   }
 }
 
-export default connect()(Fild);
+const mapStateToFildProps = (state) => {
+  return {
+    categories: state.categories
+  }
+};
+export default connect(mapStateToFildProps)(Fild);

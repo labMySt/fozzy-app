@@ -40,13 +40,13 @@ export default {
     {name: "Єтті",               discription: "bla bal ice cream", image: "", categories: ["glass", "ather"]}
   ],
   alcogol:[
-    {name: "", discription: "", image: "", categories: ["beer","classic"]},
-    {name: "", discription: "", image: "", categories: ["beer","classic"]},
-    {name: "", discription: "", image: "", categories: ["beer","light"]},
-    {name: "", discription: "", image: "", categories: ["beer","light"]},
-    {name: "", discription: "", image: "", categories: ["whiskey","bourbon"]},
-    {name: "", discription: "", image: "", categories: ["whiskey","bourbon"]},
-    {name: "", discription: "", image: "", categories: ["whiskey","scotch"]},
-    {name: "", discription: "", image: "", categories: ["Горілка"]}
+    {name: "Bud",          discription: "Lorem ipsum dolor.", image: "", categories: ["beer","classic"]},
+    {name: "Stella",       discription: "Lorem ipsum dolor.", image: "", categories: ["beer","classic"]},
+    {name: "Оболонь",      discription: "Lorem ipsum dolor.", image: "", categories: ["beer","light"]},
+    {name: "Чернігівське", discription: "Lorem ipsum dolor.", image: "", categories: ["beer","light"]},
+    {name: "jeck",         discription: "Lorem ipsum dolor.", image: "", categories: ["whiskey","bourbon"]},
+    {name: "jeam Beem",    discription: "Lorem ipsum dolor.", image: "", categories: ["whiskey","bourbon"]},
+    {name: "Jamison",      discription: "Lorem ipsum dolor.", image: "", categories: ["whiskey","scotch"]},
+    {name: "Finlandia",    discription: "Lorem ipsum dolor.", image: "", categories: ["vodka"]}
   ]
 };

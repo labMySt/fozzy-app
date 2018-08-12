@@ -9,7 +9,7 @@ export default {
         subgroups: [
           {
             name: "бісквіт",
-            path: " sponge_cake"
+            path: "sponge_cake"
           }, {
             name: "шоколадні",
             path: "chocolate"
@@ -44,7 +44,7 @@ export default {
     path: "oil",
     groups: [
       {
-        name: "соняшникова",
+        name: "соняшникова олія",
         path: "sunflower_seeds",
         subgroups: [
           {
@@ -56,7 +56,7 @@ export default {
           }
         ]
       }, {
-        name: "оливкова",
+        name: "оливкова олія",
         path: "olive",
         subgroups: [
           {

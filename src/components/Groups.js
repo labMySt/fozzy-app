@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 import {Redirect, Link, Route} from 'react-router-dom';
 import { connect } from 'react-redux';
 import Fild from './Fild';
-import Fetching from './Fetching';
 
-
+import * as actions from '../actions';
 
 class Groups extends Component {
+
 
   render() {
 
@@ -45,8 +45,7 @@ class Groups extends Component {
          </li>
        )
      }});
-     if(this.props.fetching)
-       listItems = <Fetching />;
+
    }
 
     return (
