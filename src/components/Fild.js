@@ -7,6 +7,7 @@ import GenNaming from '../helpers/GenNaming';
 
 class Fild extends Component {
   componentWillMount() {
+
     const id = this.props.match.params.id;
     this.props.dispatch(actions.getProducts(id));
   }

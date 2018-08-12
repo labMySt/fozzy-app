@@ -9,16 +9,16 @@ export default function (filters, categories) {
   let categoryProd = categories[Items[1]].groups;
   let subgroup = null;
   for(let item of categoryProd) {
-   if(item.path == Items[2]){
+   if(item.path === Items[2]){
       naming = item.name;
       subgroup = item.subgroups;
       break;
     }
   }
-  console.log(subgroup)
-  if(typeof Items[3] != "undefined") {
+
+  if(typeof Items[3] !== "undefined") {
     for(let item of subgroup) {
-     if(item.path == Items[3]){
+     if(item.path === Items[3]){
         naming =  naming + " " + item.name;
         break;
       }

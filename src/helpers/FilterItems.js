@@ -9,7 +9,7 @@ export default function (state) {
   let massGroups = [];
   massGroups.push(Items[2]);
  let subgroup  = 1;
- if(typeof Items[3] != "undefined") {
+ if(typeof Items[3] !== "undefined") {
    subgroup = 2;
    massGroups.push(Items[3]);
  };
@@ -20,7 +20,7 @@ export default function (state) {
     if (categoryProd[item].categories.indexOf(massGroups[jtem]) !== -1)
     counter++;
   }
-  if(counter == subgroup)
+  if(counter === subgroup)
    filteredProd.push(categoryProd[item]);
  }
  return filteredProd;

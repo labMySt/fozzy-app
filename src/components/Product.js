@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 class Product extends Component {
   render() {
     //console.log("../images/beer.png" === this.props.prod.image);      => thrue
-    //var image = require(this.props.prod.image)   -                    does`t work!!! why ?
-     var image = require("../images/beer.png")
+    //const image = require(this.props.prod.image)   -                    does`t work!!! why ?
+     const image = require("../images/beer.png")
     return (
 
       <div className="product">

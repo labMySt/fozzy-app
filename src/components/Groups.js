@@ -3,7 +3,6 @@ import {Redirect, Link, Route} from 'react-router-dom';
 import { connect } from 'react-redux';
 import Fild from './Fild';
 
-import * as actions from '../actions';
 
 class Groups extends Component {
 
