@@ -1,5 +1,14 @@
 import categoruis from "./categories"
 import products from "./products"
+/*
+This block is a imitation of server side work.
+To use this you should type:
+
+      export default axisos from './axisos';
+
+      axisos.get("on_of_parameter_from_implementation")
+        .then(res => .....)   or use asinc function
+  */
 
 export default {
   get: function(path) {

@@ -4,6 +4,7 @@ import FildName from './FildName';
 import ProductsList from './ProductsList';
 import * as actions from '../actions';
 import GenNaming from '../helpers/GenNaming';
+import Parser from '../helpers/Parser'
 
 class Fild extends Component {
   componentWillMount() {
@@ -17,9 +18,10 @@ class Fild extends Component {
     const url =  this.props.match.url;
     let naming = "";
     if(this.props.categories) {
-      naming = GenNaming(url, this.props.categories);
+      naming = GenNaming(Parser(url), this.props.categories);
     }
-    this.props.dispatch(actions.setVisidilityFilter(url));
+
+    this.props.dispatch(actions.setVisidilityFilter(Parser(url)));
 
 
     return (

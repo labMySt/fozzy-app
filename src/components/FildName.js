@@ -7,7 +7,7 @@ class FildName extends Component {
     return (
     <div className = "fild-name" >
       <div className="fild-name-main">
-        ---- {this.props.naming} ----
+        		&mdash;&mdash;&mdash;&emsp;{this.props.naming}&emsp;&mdash;&mdash;&mdash;
       </div>
       <div className="fild-name-discript">
         Проголосувавши ви отримаєте додаткову знижку -20%

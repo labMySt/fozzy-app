@@ -116,10 +116,10 @@ export default {
         path: "beer",
         subgroups: [
           {
-            name: "фруктове",
+            name: "класичне",
             path: "classic"
           }, {
-            name: "і ше якесь",
+            name: "світле",
             path: "light"
           }
         ]

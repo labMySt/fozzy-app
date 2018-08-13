@@ -11,8 +11,8 @@ class Routers extends Component {
         <Route  path='/:id' component={Groups}/>
         <Redirect from="/" exact to="/confectionary" />
       </Switch>
-  )
-}
+    )
+  }
 }
 
 export default Routers;

@@ -1,24 +1,24 @@
-
+/*
+   Simple fucntion that helps you to gemerate name of products
+   proup, witch you see in current moment on your sceen
+*/
 
 export default function (filters, categories) {
   let naming;
 
-  const Items = new RegExp(`/(\\w+)/(\\w+)(?:/(\\w+))?`)
-  .exec(filters);
-
-  let categoryProd = categories[Items[1]].groups;
+  let categoryProd = categories[filters[0]].groups;
   let subgroup = null;
   for(let item of categoryProd) {
-   if(item.path === Items[2]){
+   if(item.path === filters[1]){
       naming = item.name;
       subgroup = item.subgroups;
       break;
     }
   }
 
-  if(typeof Items[3] !== "undefined") {
+  if(typeof filters[2] !== "undefined") {
     for(let item of subgroup) {
-     if(item.path === Items[3]){
+     if(item.path === filters[2]){
         naming =  naming + " " + item.name;
         break;
       }

@@ -22,8 +22,6 @@ class Menu extends Component {
     if(this.props.fetching) {
       listItems =  <Fetching />
     }
-
-
     return (
      <nav id="categories">
       <ul>

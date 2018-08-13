@@ -1,17 +1,22 @@
+/*
+   Use this function to separate products depending on
+   set filters. Just put products object, and get arrey with
+   products what you need
+*/
+
+
 export default function (state) {
   let filteredProd = [];
   let categoryProd = []
   const { filters, products } = state;
 
-  const Items = new RegExp(`/(\\w+)/(\\w+)(?:/(\\w+))?`)
- .exec(filters);
- categoryProd = products[Items[1]];
+ categoryProd = products[filters[0]];
   let massGroups = [];
-  massGroups.push(Items[2]);
+  massGroups.push(filters[1]);
  let subgroup  = 1;
- if(typeof Items[3] !== "undefined") {
+ if(typeof filters[2] !== "undefined") {
    subgroup = 2;
-   massGroups.push(Items[3]);
+   massGroups.push(filters[2]);
  };
 
  for(let item in categoryProd) {
